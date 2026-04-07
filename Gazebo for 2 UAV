@@ -1,6 +1,6 @@
 How do you launch two different tools in the Gazebo simulation environment ?
 
-#!/bin/bash
+
 
 cd ~/PX4-Autopilot
 
@@ -9,13 +9,13 @@ PX4_SYS_AUTOSTART=4001 \
 PX4_GZ_MODEL_POSE="0,0,0,0,0,0" \
 PX4_GZ_MODEL=x500 \
 PX4_GZ_WORLD=rover \
-./build/px4_sitl_default/bin/px4 -i 1 &
+./build/px4_sitl_default/bin/px4 -i 1 
 
-sleep 15
+
 
 
 PX4_SYS_AUTOSTART=4001 \
 PX4_GZ_MODEL_POSE="3,0,0,0,0,0" \
 PX4_GZ_MODEL=x500 \
 PX4_GZ_WORLD=rover \
-./build/px4_sitl_default/bin/px4 -i 2 &
+./build/px4_sitl_default/bin/px4 -i 2 
